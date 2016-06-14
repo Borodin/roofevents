@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Слишком старый браузер</title>
+	<style>
+	body{
+		background-color: #eee;
+		font: 14px/1.5em arial,sans-serif;
+	}
+	body, html{
+		height: 100%;
+		margin: 0;
+	}
+	.content{
+		text-align: center;
+		position: absolute;
+		/* margin: auto;
+		top:0; left:0; right:0; bottom:0;
+		height: 400px;
+		width: 400px;
+		width: 40%;
+		max-width: 400px;
+		*/
+		width:400px;
+		left: 50%;
+		margin-left: -200px;
+		height: 400px;
+		top:50%;
+		margin-top: -200px;
+
+	}
+	h2{
+		font-size: 60px;
+		color: #b3b3b3;
+		line-height: 1em;
+	}
+	h3{
+		font-size: 20px;
+		line-height: 1.3em;
+	}
+	a{
+		font-size: 16px;
+		color:#0060ff;
+		font-weight: bold;
+	}
+	a:visited{
+
+		color:#691662;
+	}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<h2>:-(</h2>
+		<h3>Для отображения виртуального тура необходимо обновить браузер.</h3>
+		<a href="http://chrome.google.com" id="download" target="_blank">Обновить</a>
+	</div>
+	<script>
+
+	(function (window) {
+	    {
+	        var unknown = '-';
+
+	        //browser
+	        var nVer = navigator.appVersion;
+	        var nAgt = navigator.userAgent;
+	        var browser = navigator.appName;
+	        var version = '' + parseFloat(navigator.appVersion);
+
+	        // Opera
+	        if ((verOffset = nAgt.indexOf('Opera')) != -1) {
+	            browser = 'Opera';
+	            version = nAgt.substring(verOffset + 6);
+	            if ((verOffset = nAgt.indexOf('Version')) != -1) {
+	                version = nAgt.substring(verOffset + 8);
+	            }
+	        }
+	        // MSIE
+	        else if ((verOffset = nAgt.indexOf('MSIE')) != -1) {
+	            browser = 'Microsoft Internet Explorer';
+	            version = nAgt.substring(verOffset + 5);
+	        }
+	        // Chrome
+	        else if ((verOffset = nAgt.indexOf('Chrome')) != -1) {
+	            browser = 'Chrome';
+	            version = nAgt.substring(verOffset + 7);
+	        }
+	        // Safari
+	        else if ((verOffset = nAgt.indexOf('Safari')) != -1) {
+	            browser = 'Safari';
+	            version = nAgt.substring(verOffset + 7);
+	            if ((verOffset = nAgt.indexOf('Version')) != -1) {
+	                version = nAgt.substring(verOffset + 8);
+	            }
+	        }
+	        // Firefox
+	        else if ((verOffset = nAgt.indexOf('Firefox')) != -1) {
+	            browser = 'Firefox';
+	            version = nAgt.substring(verOffset + 8);
+	        }
+	        // MSIE 11+
+	        else if (nAgt.indexOf('Trident/') != -1) {
+	            browser = 'Microsoft Internet Explorer';
+	            version = nAgt.substring(nAgt.indexOf('rv:') + 3);
+	        }
+	        // Other browsers
+	        else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) < (verOffset = nAgt.lastIndexOf('/'))) {
+	            browser = nAgt.substring(nameOffset, verOffset);
+	            version = nAgt.substring(verOffset + 1);
+	            if (browser.toLowerCase() == browser.toUpperCase()) {
+	                browser = navigator.appName;
+	            }
+	        }
+	    }
+
+	    window.jscd = {
+	        browser: browser,
+	        browserVersion: version
+	    };
+	}(this));
+
+
+	var downloads = {
+		'Opera': 'http://www.opera.com/',
+		'Microsoft Internet Explorer': 'https://ie.microsoft.com',
+		'Chrome': 'http://chrome.google.com',
+		'Safari': 'https://www.apple.com/ru/safari/',
+		'Firefox': 'https://www.mozilla.org/ru/firefox/new/'
+	}
+
+	window.addEventListener('load', function(){
+		document.getElementById('download').href = downloads[jscd.browser];
+	}, false);
+
+	</script>
+</body>
+</html>

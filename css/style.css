@@ -1,0 +1,19 @@
+.marker{
+	background-color: #eb3425;
+}
+#loader {
+	background: #eb3425;
+}
+.logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/logo.svg);
+	width: 130px;
+	height: 100px;
+	/*background-color: red;*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 10;
+}

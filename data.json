@@ -1,0 +1,226 @@
+{
+	"panorams" : [
+		{
+			"id": 0,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": 1.67,
+					"lon": -14.01,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 1,
+						"lon": 16.33,
+						"lat": 1.80,
+						"fov": 90
+					}
+				},{
+					"lat": 6.17,
+					"lon": -127.18,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 2,
+						"lon": 122.62,
+						"lat": 2.57,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 1,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -12.62,
+					"lon": -161.72,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 0,
+						"lon": 163.98,
+						"lat": 3.09,
+						"fov": 90
+					}
+				},{
+					"lat": 3.78,
+					"lon": 242.60,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 2,
+						"lon": 119.16,
+						"lat": 4.89,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 2,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -15.27,
+					"lon": -14.16,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 0,
+						"lon": 48.60,
+						"lat": 0.13,
+						"fov": 90
+					}
+				},{
+					"lat": -6.76,
+					"lon": -41.86,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 1,
+						"lon": 48.16,
+						"lat": -2.68,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 3,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -8.50,
+					"lon": -17.72,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 4,
+						"lon": -123.51,
+						"lat": -0.38,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 4,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -3.21,
+					"lon": 31.46,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 3,
+						"lon": 129.01,
+						"lat": -3.60,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 5,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -1.29,
+					"lon": -30.47,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 6,
+						"lon": -127.52,
+						"lat": -0.66,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 6,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -3.47,
+					"lon": 59.92,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 5,
+						"lon": 134.92,
+						"lat": -1.57,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 7,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -1.72,
+					"lon": 620.56,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 8,
+						"lon": -274.07,
+						"lat": -1.47,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 8,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -1.47,
+					"lon": -274.07,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 7,
+						"lon": 82.37,
+						"lat": -4.36,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 9,
+			"title": "",
+			"lon": 0,
+			"lat": 0,
+			"fov": 90,
+			"markers": [
+			]
+		}
+	]
+}

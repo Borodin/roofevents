@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="/tour/css/main.css">
+<script src="/tour/js/three.min.js"></script>
+<script src="/tour/js/main.js"></script>
+<title>Виртуальный тур</title>
+</head>
+<body>
+	<div id="appContainer">
+		<div id="tour">
+			<img id="layer" onmousedown="return false" alt=""> 
+			<div id="markers"></div>
+			<div id="control_menu">
+				<div id="control_block">
+					<div id="loader"></div>
+					<ul id="buttons">
+						<li class="left" onclick="control.left()" title="Влево"></li>
+						<li class="right" onclick="control.right()" title="Вправо"></li>
+						<li class="up" onclick="control.up()" title="Вверх"></li>
+						<li class="down" onclick="control.down()" title="Вниз"></li>
+						<li class="zoomin" onclick="control.zoomin()" title="Увеличить"></li>
+						<li class="zoomout" onclick="control.zoomout()" title="Уменьшить"></li>
+						<li class="fullscreen" id="fs" onclick="control.fullscreen()" title="Во весь экран"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<ul id="mouse_menu">
+			<li onclick="control.zoomin()">Увеличить</li>
+			<li onclick="control.zoomout()">Уменьшить</li>
+			<li onclick="control.autorotation()">Автовращение</li>
+			<li onclick="control.fullscreen()">Во весь экран</li>
+			<li onclick="control.reload()">Перезагрузить</li>
+			<li class="hr"></li>
+			<li onclick="control.download()">Сохранить изображение как...</li>
+			<li class="hr"></li>
+			<li onclick="control.hideMenu(this)">Скрыть меню управления</li>
+			<li onclick="control.getCode()">Получить код для вставки</li>
+			<li class="hr"></li>
+			<li onclick="control.visitSite()">Перейти на www.tour-360.ru</li>
+			<li onclick="" class="disabled" id="info"></li>
+		</ul>
+	</div>
+</body>
+</html>
