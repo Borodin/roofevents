@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<link rel="stylesheet" href="tour/css/main.css">
+<link rel="stylesheet" href="/tour/css/main.css">
 <link rel="stylesheet" href="css/style.css">
-<script src="tour/js/three.min.js"></script>
-<script src="tour/js/main.js"></script>
+<script src="/tour/js/three.min.js"></script>
+<script src="/tour/js/main.js"></script>
 <title>Виртуальный тур</title>
 </head>
 <body>
@@ -34,7 +34,15 @@
 					</ul>
 				</div>
 			</div>
-			<div class="logo"></div>
+			<a href="http://roofevents.ru/" target="_blank"><div class="logo"></div></a>
+			<nav>
+				<ul>
+					<li onclick="setPanorama(0)">Флакон</li> 
+					<li onclick="setPanorama(6)">Красносельская</li>
+					<li onclick="setPanorama(3)">Красина</li>
+					<li onclick="setPanorama(7)">Пушка</li>
+				</ul>
+			</nav>
 		</div>
 
 		<ul id="mouse_menu">
@@ -56,3 +64,24 @@
 	</div>
 </body>
 </html>
+
+<style>
+	nav{
+		position: absolute;
+		z-index: 3;
+	    top: 96px;
+	    left: 18px;
+		color: white;
+		cursor: pointer;
+		list-style-type: none;
+	}
+
+	nav ul{
+		margin-left: 0;
+    	padding-left: 0;
+	}
+
+	nav li{
+		list-style-type: none;
+	}
+</style>
