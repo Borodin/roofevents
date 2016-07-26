@@ -221,6 +221,45 @@
 			"fov": 90,
 			"markers": [
 			]
+		},{
+			"id": 10,
+			"title": "",
+			"lon": 127.06,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -2.66,
+					"lon": -149.11,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 11,
+						"lon": 1.77,
+						"lat": -0.38,
+						"fov": 90
+					}
+				}
+			]
+		},{
+			"id": 11,
+			"title": "",
+			"lat": 0.01,
+			"lon": 195.07,
+			"fov": 90,
+			"markers": [
+				{
+					"lat": -2.30,
+					"lon": 204.46,
+					"type": "panorama",
+					"direction": "up",
+					"link": {
+						"id": 10,
+						"lon": 24.79,
+						"lat": 1.06,
+						"fov": 90
+					}
+				}
+			]
 		}
 	]
 }
